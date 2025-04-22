@@ -1,2 +1,2 @@
 # Software-Engineering-Project
-E-commerce website
+E-commerce website for SE project
