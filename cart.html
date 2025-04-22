@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>E-commerce website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html" id="login-link">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div id="cart-total">
+            <h3>Total: Rs <span id="total-price">0</span></h3>
+        </div>
+
+        <!-- Delivery Details Section -->
+        <div class="delivery-details" id="delivery-details-section">
+            <h3>Delivery Details</h3>
+            <form id="delivery-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Enter your delivery address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-instructions">Delivery Instructions (Optional)</label>
+                    <textarea id="delivery-instructions" name="instructions" rows="2" placeholder="Any special instructions for delivery"></textarea>
+                </div>
+                <button type="submit" id="checkout-btn">Checkout</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
